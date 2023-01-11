@@ -4,7 +4,7 @@ import boto3
 s3 = boto3.client('s3')
 
 # Define the name of the bucket and the file to be deleted
-bucket_name = 'brians-boto3-bucket'
+bucket_name = 'fake-bucke-name' # This is a fake bucket name, You will need to insert you're bucket name 
 file_name = 'boto3_python/S3Search.py'
 
 # Delete the file
