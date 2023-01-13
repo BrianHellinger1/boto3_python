@@ -4,7 +4,7 @@ import boto3
 session = boto3.Session(
     aws_access_key_id='your-access-key-id', # <-- this is your specific access key for your AWS account
     aws_secret_access_key='your-secret-key', # <-- this is your specific secret access key for your AWS account
-    region_name='your-region' # <-- this is your specific region 
+    region_name='your-region' # <-- this is your specific region you are in
 )
 
 # Create an EC2 client using the session
@@ -18,4 +18,3 @@ response = ec2.terminate_instances(InstanceIds=[instance_id])
 
 # Print the response
 print(response)
-
